@@ -2,6 +2,7 @@
   "name": "the_bright_future_ielts_academy",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Huzaifa-Akram.github.io/PROJECT",
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
@@ -21,20 +22,15 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "git-pages": "^0.8.1",
-    "vite": "^5.2.3"
+    "gh-pages": "^5.0.0"
   },
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
-  "eslintConfig": {
-    "root": true
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
