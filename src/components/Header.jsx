@@ -139,27 +139,6 @@ const Header = ({
           Achievements
         </a>
       </nav>
-      {showAuthButtons && (
-        <div className="auth-buttons" style={frameDivStyle}>
-          <div className="login-wrapper">
-            <a className="login">{login}</a>
-          </div>
-          <Button
-            disableElevation
-            variant="contained"
-            sx={{
-              textTransform: "none",
-              color: "#07233b",
-              fontSize: "14",
-              background: "#bf9654",
-              borderRadius: "40px",
-              "&:hover": { background: "#bf9654" },
-            }}
-          >
-            {frame5}
-          </Button>
-        </div>
-      )}
     </header>
   );
 };
